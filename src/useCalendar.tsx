@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { CalendarEvent } from './types';
 import { getEndDate, getStartDate } from './dates';
 import osascript from 'osascript-tag';
-var Sherlock = require('sherlockjs');
+import Sherlock from 'sherlockjs';
 
 export const executeJxa = async (script: string) => {
   try {

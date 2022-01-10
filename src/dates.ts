@@ -34,7 +34,7 @@ export const getStartDate = () => {
 };
 
 export const getEndDate = (startDate: Date) => {
-  var endDate = new Date(startDate);
+  const endDate = new Date(startDate);
   return addHours(endDate, 1);
 };
 

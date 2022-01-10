@@ -39,7 +39,7 @@ export default function Command() {
 
   return (
     <List isLoading={isLoading} onSearchTextChange={parse} searchBarPlaceholder="E.g. Movie at 7pm on Friday" throttle>
-      <List.Section title="Event" subtitle={results.length + ''}>
+      <List.Section title="Your quick event">
         {results.map((item) => (
           <List.Item
             key={item.id}
