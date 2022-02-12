@@ -28,7 +28,9 @@ export function useCalendar() {
       setIsLoading(true);
       setCalendarText(query);
 
-      if (query) {
+      if (query.length === 0) {
+        setResults([]);
+      } else {
         const parsedEvent = Sherlock.parse(query);
 
         const event: CalendarEvent = {
